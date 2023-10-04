@@ -11,6 +11,10 @@ include_once 'autoload.php';
     <title>Document</title>
 </head>
 <body>
-    <p>hello wolrd!!</p>
+    <p>hello world!!</p>
+    <?php 
+    $intro = new IntroController();
+    $intro->introCon();
+    ?>
 </body>
 </html>
