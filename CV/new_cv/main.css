@@ -1,0 +1,143 @@
+/* profile_image */
+
+@font-face {
+    font-family: 'nunito';
+    src: url('./Nunito/Nunito-Italic-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'pt_serif';
+    src: url('./PT_Serif/PTSerif-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'rajdhani';
+    src: url('./Rajdhani/Rajdhani-Medium.ttf');
+}
+
+body {
+    font-family: 'rajdhani';
+    justify-content: center;
+    display: flex;
+    line-height: normal;
+    /* margin: 35px; */
+}
+
+.main {
+    color: white;
+    background-color: #BBABA4;
+}
+
+.profile-img {
+    /* width: 283px; */
+    height: 204px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* .profile_professionnel {
+    font-weight: bold;
+} */
+
+.fname,
+
+/* .formation, */
+
+.stage,
+.language,
+.soft-skill {
+    font-family: 'rajdhani';
+    /* font-weight: bold; */
+    color: #BBABA4;
+}
+
+.touch-typing {
+    font-size: 12px;
+}
+
+.lname {
+    font-family: 'rajdhani';
+    color: #000000;
+}
+
+.profile_image {
+    /* width: 261px; */
+    /* height: 200px; */
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.arrow {
+    width: 21px;
+}
+
+hr {
+    width: 40%;
+    color: orange;
+    border: 2px solid black;
+}
+
+.end-contact {
+    width: 40%;
+    color: orange;
+    border: 2px solid brown;
+}
+
+.realisations {
+    line-height: 15px;
+}
+
+
+/* check-box */
+
+.form input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+    line-height: normal;
+}
+
+.form input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: goldenrod;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+    line-height: normal;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    line-height: normal;
+}
+
+.formation-image {
+    /* width: 184px; */
+    height: 53px;
+    object-fit: contain;
+}
+
+.lang {
+    color: black;
+}
+
+.soft-skills,
+.hoppies {
+    line-height: 0px;
+}
