@@ -2,19 +2,15 @@
 
 include_once 'autoload.php';
 
+if (isset($_GET['page'])) {
+	$page = strtolower($_GET['page']);
+
+    switch ($page) {
+        case "landing":
+            IntroController::introCon();
+          break;
+        }
+} else {
+    Not_foundController::NotFound();
+}
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>hello world!!</p>
-    <?php 
-    $intro = new IntroController();
-    $intro->introCon();
-    ?>
-</body>
-</html>

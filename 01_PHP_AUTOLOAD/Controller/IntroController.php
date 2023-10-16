@@ -2,8 +2,11 @@
 
 Class IntroController
 {
-    public function introCon()
+    public static function introCon()
     {
-        echo '<p>This is Intro</p>';
+        //view
+        require_once './Templates/header.php';
+        require_once './Templates/landing.php';
+        require_once './Templates/footer.php';
     }
 }
