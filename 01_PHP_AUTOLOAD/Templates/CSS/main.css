@@ -1,18 +1,105 @@
-/* login */
-body {
-	padding-top: 90px;
+/* font */
+@font-face {
+	font-family:'lora' ;
+	src:  url('https://fonts.googleapis.com/css?family=Lato|Lora');
 }
-.login-parent{
-	background-color:#f09f0a;
+body {
+	font-family: 'lora';
 }
 
-.Login-form {
-	height:500px;
-	border-radius: 5rem 0 5rem 5rem;
-	background-color: #452f06;
+.main-img {
+	background-image: url('https://daylighthilliard.com/wp-content/uploads/2021/04/great-coffee-bean.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	/* background-attachment: fixed; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-box-shadow: 5px 5px 15px 5px #000000;
+	box-shadow: 5px 5px 15px 5px #000000;
+	margin: 40px;
+	height: 500px;
+	/* background-color: rgb(45, 43, 43);   */
+	/* object-fit: contain; */
 }
+
+/* end-landing */
+
+/* down-arrow */
+.down-arrow {
+	display: flex;
+	/* justify-content: flex-end; */
+	align-items: center;
+	color: white;
+	width: 60px;
+	margin-bottom: -583px;
+	animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+	0%,20%,50%,80%,100% {
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-30px);
+	}
+
+	60% {
+		transform: translateY(-15px);
+	}
+}
+
+/* end down-arrow */
+/* man-container */
+@import url('https://fonts.googleapis.com/css?family=Lato|Lora');
+
+
+/* end main-container */
+.outter-box {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 400px;
+	object-fit: contain;
+	border-radius: 0 0 .5rem;
+}
+
+/* login */
+
+.Login-form {
+	/* background-color: lightgrey; */
+	background-image: url('https://www.tastingtable.com/img/gallery/the-absolute-best-ways-to-keep-coffee-beans-fresh/l-intro-1647867653.jpg');
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-box-shadow: 5px 5px 15px 5px #000000;
+	box-shadow: 5px 5px 15px 5px #000000;
+	margin: 40px;
+	height: 500px;
+	background-color: #959595;
+}
+
 .login-inner {
-	background-color: #594010;
-	color: wheat;
+	background-color: rgb(85, 61, 0);
+	/* border: 2px solid rgb(217, 18, 18); */
+	/* display: none; */
+	color: rgb(246, 245, 245);
 	width: 50%;
+}
+
+.login-form-header {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 2rem;
+	background-color: #0c0902;
+}
+
+.login-inner:hover,
+.submit-btn:hover {
+	box-shadow: 0 0 10px 5px;
 }

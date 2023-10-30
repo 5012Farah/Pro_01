@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
   <link rel="stylesheet" href="./Templates/CSS/main.css">
 
 </head>
@@ -14,7 +16,7 @@
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid d-flex">
-      <a class="navbar-brand" href="index.php?page=landing">Navbar</a>
+      <a class="navbar-brand" href="index.php?page=landing">Home Coffee!</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -32,11 +34,10 @@
           <li class="nav-item">
             <a class="nav-link" href="index.php?page=profile">Profile</a>
           </li>
-          </div>
           <li class="nav-item" style="list-style: none;">
-            <a class="nav-link d-flex justify-content-end" href="#">SignIn|SignUp</a>
+            <a class="nav-link" id="login" href="index.php?page=login">SignIn|SignUp</a>
           </li>
-        </ul>
-      
+      </div>
+      </ul>
     </div>
   </nav>
