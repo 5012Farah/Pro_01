@@ -13,10 +13,13 @@
 <body class="p-3 m-0 border-0 bd-example m-0 border-0">
 
   <!-- Example Code -->
-
+  <?php 
+  if($_GET['page'] !== 'admin_page') { ?>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid d-flex">
-      <a class="navbar-brand" href="index.php?page=landing">Home Coffee!</a>
+      <a class="navbar-brand logo" href="index.php?page=landing">
+        <img src="https://i.pinimg.com/736x/bc/52/5f/bc525f0c2612e5f61ef01f8fe274b379.jpg" alt="">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -41,3 +44,6 @@
       </ul>
     </div>
   </nav>
+  <?php 
+  }
+?>

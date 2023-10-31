@@ -21,6 +21,11 @@ if (isset($_GET['page']) && !empty($_GET['page'])) {
       break;
   }
   switch ($page) {
+    case "admin_page":
+      Admin_pageController::admin_page();
+      break;
+  }
+  switch ($page) {
     case "not_found":
       Not_foundController::NotFound();
       break;
